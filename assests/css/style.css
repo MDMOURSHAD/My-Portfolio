@@ -9,7 +9,7 @@ Start Variables
 
 :root{
   --heading: 42px;
-  --paragraph: 15px;
+  --paragraph: 16px;
   --first-color: #FFFFFF;
   --second-color: #F8F8F8;
   --third-color: #1e2125;
@@ -18,7 +18,7 @@ Start Variables
 
 /*
 ========================================
-Start Variables
+End Variables
 ========================================
 */
 
@@ -237,6 +237,7 @@ Start Reusable Components
     font-size: var(--heading);
     letter-spacing: 1px;
     word-spacing: 0px;
+    color: var(--third-color);
 }
 .section-title h2::after {
     content: '';
@@ -393,7 +394,7 @@ MOBILE MENU
     -moz-border-radius: 5px;
     -o-border-radius: 5px;
     -ms-border-radius: 5px;
-    background: #fff;
+    background: var(--third-color);
     transition: all .8s;
     -webkit-transition: all .8s;
     -moz-transition: all .8s;
@@ -476,7 +477,7 @@ Start Banner
 ===================================
 */
 .banner{
-  padding-top: 110px;
+  padding-top: 30px;
 }
 .banner .banner-desc h1{
   margin-top: -3px;
@@ -484,14 +485,41 @@ Start Banner
 }
 .banner .banner-desc p{
   margin-top: 17px;
+  width: 90%;
 }
-
+.banner-img img{
+  margin-bottom: -6px;
+}
 /*
 ===================================
 End Banner
 ===================================
 */
 
+/*
+===================================
+Start Sticky
+===================================
+*/
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: .4s ease-in-out;
+  width: 100%;
+  background: var(--first-color);
+  z-index: 9999999;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+/*
+===================================
+End Sticky
+===================================
+*/
 /*
 ========================================
 End Header Section Css
@@ -563,7 +591,34 @@ End About us Section Css
 Start Skill Section Css
 ========================================
 */
-
+.skill-row{
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.skill-row > *{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.progressbar {
+    width:  100%;
+     margin-top:  5px;
+     margin-bottom:  25px;
+     position:  relative;
+     background-color:  #f4f4f4;
+}
+.proggress {
+    height:  8px;
+     width:  10px;
+     background-color:  #ff0;
+}
+.percentCount {
+    float:  right;
+     margin-top:  -42px;
+     clear:  both;
+     font-weight:  700;
+     font-size:  13px;
+     color:  var(--third-color);
+}
 /*
 ========================================
 End Skill Section Css

@@ -9,6 +9,25 @@
 
 @media (max-width: 1199px) {
 
+/*
+========================================
+Start About us Section Css
+========================================
+*/
+
+.name-phone-email ul:nth-child(2),
+.name-phone-email ul:last-child,
+.nationality-address-freeelance ul:first-of-type,
+.nationality-address-freeelance ul:nth-child(2),
+.nationality-address-freeelance ul:last-child{
+  margin-top: 5px;
+}
+/*
+========================================
+End About us Section Css
+========================================
+*/
+
 }
 
 @media (max-width: 991px) {
@@ -17,6 +36,9 @@
 Start Reusable Components
 ========================================
 */
+:root{
+  --heading: 37px;
+}
 /*
 ========================================
 End Reusable Components
@@ -47,7 +69,12 @@ MOBILE MENU
 Start Banner
 ===================================
 */
-
+.banner-desc h1{
+    font-size: 45px;
+}
+.banner .banner-desc p {
+    font-size: 15px;
+}
 /*
 ===================================
 End Banner
@@ -88,6 +115,9 @@ End Skill Section Css
 Start Services Section Css
 ========================================
 */
+.service-title p{
+    width: 70%;
+}
 /*
 ========================================
 End Services Section Css
@@ -99,7 +129,9 @@ End Services Section Css
 Start Portfolio Section Css
 ========================================
 */
-
+.portfolio-title p{
+    width: 75%;
+}
 /*
 ========================================
 End Portfolio Section Css
@@ -111,12 +143,17 @@ End Portfolio Section Css
 Start Testimonial Section Css
 ========================================
 */
+.testimonial-title p{
+    width: 70%;
+}
 /*
 ========================================
 End Testimonial Section Css
 ========================================
 */
-
+.price-title p {
+    width: 81%;
+}
 /*
 ========================================
 Start Price Section Css
@@ -135,6 +172,12 @@ Start Contact Section Css
 */
 .contact-title h2{
     font-size: 28px;
+}
+.contact-title p{
+    width: 81%;
+}
+.contact-adress li:first-child i {
+    margin-bottom: 6px;
 }
 /*
 ========================================
@@ -156,11 +199,191 @@ End Footer Section Css
 }
 
 @media (max-width: 767px) {
+/*
+========================================
+Start Reusable Components
+========================================
+*/
+/*
+========================================
+End Reusable Components
+========================================
+*/
 
+/*
+========================================
+Start Header Section Css
+========================================
+*/
+
+/*
+===================================
+Start Banner
+===================================
+*/
+.banner {
+    padding-top: 60px;
+}
+.banner .banner-desc p {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+/*
+===================================
+End Banner
+===================================
+*/
+
+/*
+========================================
+End Header Section Css
+========================================
+*/
+
+/*
+========================================
+Start About us Section Css
+========================================
+*/
+.about-row > *{
+    margin-bottom: 30px;
+}
+.about-desc p{
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+/*
+========================================
+End About us Section Css
+========================================
+*/
+
+/*
+========================================
+Start Skill Section Css
+========================================
+*/
+
+/*
+========================================
+End Skill Section Css
+========================================
+*/
+
+/*
+========================================
+Start Services Section Css
+========================================
+*/
+.service-title p {
+    width: 90%;
+}
+/*
+========================================
+End Services Section Css
+========================================
+*/
+
+/*
+========================================
+Start Portfolio Section Css
+========================================
+*/
+.portfolio-title p {
+    width: 90%;
+}
+/*
+========================================
+End Portfolio Section Css
+========================================
+*/
+
+/*
+========================================
+Start Testimonial Section Css
+========================================
+*/
+.testimonial-title p {
+    width: 94%;
+}
+/*
+========================================
+End Testimonial Section Css
+========================================
+*/
+
+/*
+========================================
+Start Price Section Css
+========================================
+*/
+.price-title p {
+    width: 94%;
+}
+/*
+========================================
+End Price Section Css
+========================================
+*/
+
+/*
+========================================
+Start Contact Section Css
+========================================
+*/
+.contact-title p {
+    width: 92%;
+}
+.contact-row > *{
+    margin-bottom: 30px;
+}
+/*
+========================================
+End Contact Section Css
+========================================
+*/
+
+/*
+========================================
+Start Footer Section Css
+========================================
+*/
+.footer-icon{
+    margin-bottom: 15px;
+}
+/*
+========================================
+End Footer Section Css
+========================================
+*/
 }
 
 @media (max-width: 575px) {
 
+/*
+========================================
+Start Reusable Components
+========================================
+*/
+.primary-btn {
+    font-size: 15px;
+}
+/*
+========================================
+End Reusable Components
+========================================
+*/
+:root{
+  --heading: 35px;
+}
+/*
+========================================
+Start Header Section Css
+========================================
+*/
 
 /*
 ======================
@@ -173,6 +396,146 @@ MOBILE MENU
     width: 100%;
 }
 
+/*
+===================================
+Start Banner
+===================================
+*/
+.banner .banner-desc h1 {
+    margin-top: -3px;
+    margin-bottom: -3px;
+    font-size: 35px;
+}
+/*
+===================================
+End Banner
+===================================
+*/
+
+/*
+========================================
+End Header Section Css
+========================================
+*/
+
+/*
+========================================
+Start About us Section Css
+========================================
+*/
+.about-desc p {
+    width: 100%;
+}
+/*
+========================================
+End About us Section Css
+========================================
+*/
+
+/*
+========================================
+Start Skill Section Css
+========================================
+*/
+
+/*
+========================================
+End Skill Section Css
+========================================
+*/
+
+/*
+========================================
+Start Services Section Css
+========================================
+*/
+.service-title p {
+    width: 100%;
+}
+/*
+========================================
+End Services Section Css
+========================================
+*/
+
+/*
+========================================
+Start Portfolio Section Css
+========================================
+*/
+.portfolio-title p {
+    width: 99%;
+}
+/*
+========================================
+End Portfolio Section Css
+========================================
+*/
+
+/*
+========================================
+Start Testimonial Section Css
+========================================
+*/
+.testimonial-title p {
+    width: 100%;
+}
+/*
+========================================
+End Testimonial Section Css
+========================================
+*/
+
+/*
+========================================
+Start Price Section Css
+========================================
+*/
+.price-title p {
+    width: 100%;
+}
+/*
+========================================
+End Price Section Css
+========================================
+*/
+
+/*
+========================================
+Start Contact Section Css
+========================================
+*/
+.contact-title p {
+    width: 100%;
+}
+.form-wrapper{
+padding: 30px 25px;
+}
+.contact-adress li:not(last-child){
+    margin-bottom: 10px;
+}
+/*
+========================================
+End Contact Section Css
+========================================
+*/
+
+/*
+========================================
+Start Footer Section Css
+========================================
+*/
+ul.footer-menu {
+    margin-top: 23px;
+}
+.footer-bottom-row {
+    padding-top: 20px;
+}
+/*
+========================================
+End Footer Section Css
+========================================
+*/
 }
 
 

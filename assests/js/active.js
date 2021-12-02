@@ -1,41 +1,57 @@
-(function($) {
+(function ($) {
     'use strict';
 
     $('.html').rProgressbar({
-        percentage: 80,
-        fillBackgroundColor: '#1abc9c'
+        percentage: 95,
+        fillBackgroundColor: '#e21e51',
+        backgroundColor: '#1e2125',
+        borderRadius: '10px',
+        duration: 2000
+
     });
     $('.css').rProgressbar({
         percentage: 90,
-        fillBackgroundColor: '#2ecc71'
+        fillBackgroundColor: '#e21e51',
+        borderRadius: '10px',
+        backgroundColor: '#1e2125',
+        duration: 2000
     });
-
-
-
-    $('.php').rProgressbar({
-        percentage: 75,
-        fillBackgroundColor: '#9b59b6'
-    });
-
-
 
     $('.javascript').rProgressbar({
-        percentage: 65,
-        fillBackgroundColor: '#34495e'
-    });
+        percentage: 60,
+        fillBackgroundColor: '#e21e51',
+        borderRadius: '10px',
+        backgroundColor: '#1e2125',
+        duration: 2000
 
+    });
 
 
     $('.jquery').rProgressbar({
-        percentage: 95,
-        fillBackgroundColor: '#f1c40f',
-        backgroundColor: '#e67e22'
+        percentage: 90,
+        fillBackgroundColor: '#e21e51',
+        borderRadius: '10px',
+        backgroundColor: '#1e2125',
+        duration: 2000
+
     });
 
+    $('.bootstrap').rProgressbar({
+        percentage: 95,
+        fillBackgroundColor: '#e21e51',
+        borderRadius: '10px',
+        backgroundColor: '#1e2125',
+        duration: 2000
 
+    });
 
-
-
+    $('.sass').rProgressbar({
+        percentage: 80,
+        fillBackgroundColor: '#e21e51',
+        borderRadius: '10px',
+        backgroundColor: '#1e2125',
+        duration: 2000
+    });
 
 
 })(jQuery);

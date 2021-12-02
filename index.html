@@ -20,6 +20,8 @@
 		<link rel="stylesheet" type="text/css" href="assests/css/bootstrap-grid.min.css">
 		<link rel="stylesheet" type="text/css" href="assests/css/default.css">
 		<link rel="stylesheet" type="text/css" href="assests/css/spacing.css">
+		<link rel="stylesheet" type="text/css" href="assests/css/jquery.barfiller.css">
+		<link rel="stylesheet" type="text/css" href="assests/css/jquery.rprogessbar.min.css">
 		<link rel="stylesheet" type="text/css" href="assests/css/swiper-bundle.min.css">
 		<link rel="stylesheet" type="text/css" href="assests/css/style.css">
 		<link rel="stylesheet" type="text/css" href="assests/css/responsive.css">
@@ -49,12 +51,12 @@
 		========================================
 		-->
 		<header class="header background-color-f8 background-color-2">
-			<nav class="py-15">
+			<nav class="py-15 nav">
 				<div class="container">	
 					<div class="nav-wrapper d-flex justify-content-between uppercase positoion-relative align-items-center position-relative">
 						<!-- LOGO -->
 						<div class="nav-logo">
-							<a href="#" class="font-weight-800 font-size-28 text-uppercase text-color-3 position-relative">MOURSHAD</a>
+							<a href="#" class="font-weight-800 font-size-28 text-uppercase text-color-4 position-relative">MOURSHAD</a>
 						</div>
 						<!-- MAIN MENU -->
 						<div class="nav-menu">
@@ -89,21 +91,21 @@
 				</div>
 			</nav>
 			<!-- Banner -->
-			<div class="banner pb-100">
+			<div class="banner">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-7 align-self-center">
-							<div class="banner-desc">
+							<div class="banner-desc text-center text-md-start">
 								<span class="font-weight-400 font-size-18 text-color-3">Hello I'm</span>
-								<h1 class="font-size-60 font-weight-700 text-color-3">Md Mourshad</h1>
+								<h1 class="font-size-60 font-weight-700 text-color-3 uppercase">Md Mourshad</h1>
 								<span class="profession font-size-20 text-color-4 font-weight-600 me-05">I'm</span><span class="font-size-20 text-color-4 font-weight-600 element"></span>
-								<p class="font-size-15 mb-50 font-weight-400 text-color-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+								<p class="font-size-16 mb-50 font-weight-400 text-color-3">My work is always simple, fresh, and pixel-perfect. I work flexibly with clients to fulfill their website needs. This enables my clients to improve their business. </p>
 								<a href="#" class="uppercase primary-btn font-weight-600 font-size-16 text-color-1 background-color-4">Download Cv</a>
 							</div>
 						</div>
 						<div class="col-md-5">
 							<div class="banner-img">
-								<img src="assests/images/12+ copy.png" class="img-fluid" alt="illustration-banner">
+								<img src="assests/images/12+ copy.png" class="img-fluid w-100" alt="illustration-banner">
 							</div>
 						</div>
 					</div>
@@ -125,8 +127,8 @@
 			-->
 			<section class="about py-100 background-color-1">
 				<div class="container">
-					<div class="row">
-						<div class="col-md-5">
+					<div class="row about-row">
+						<div class="col-md-6 col-lg-5 d-none d-md-block align-self-center align-self-xl-start">
 							<div class="about-img position-relative">
 								<div class="top-left background-color-4"></div>
 								<div class="left-top background-color-4"></div>
@@ -135,12 +137,12 @@
 								<img src="assests/images/123.jpg" alt="about-img" class="img-fluid w-100">
 							</div>
 						</div>
-						<div class="col-md-7 align-self-center">
-							<div class="about-desc">
+						<div class="col-md-6 col-lg-7 align-self-center">
+							<div class="about-desc text-center text-md-start">
 								<span class="font-size-18 font-weight-500 text-color-4">My Intro</span>
 								<h2 class="font-size-35 font-weight-600 text-color-3">About Me</h2>
 								<p class="font-weight-400 text-color-3">I'm a freelancer front-end developer with 2 years of experience. My work is very passionate and dedicated to me. I have acquired enough skills for you to accomplish your work perfectly. I really enjoy my work to learning something new.</p>
-								<div class="d-flex justify-content-between mt-25">
+								<div class="d-flex justify-content-between flex-column flex-xl-row mt-25">
 									<div class="name-phone-email">
 										<ul>
 											<li class="d-inline-block"><i class="fas fa-user text-color-4"></i></li>
@@ -161,7 +163,7 @@
 											<li class="d-inline-block font-weight-400 font-size-16 text-color-3">mourshad4576@gmail.com</li>
 										</ul>
 									</div>
-									<div class="nationality-address-freeelance">
+									<div class="nationality-address-freeelance d-none d-lg-block">
 										<ul>
 											<li class="d-inline-block"><i class="fas fa-flag text-color-4"></i></li>
 											<li class="d-inline-block font-weight-600 font-size-16 text-color-3">Nationality</li>
@@ -185,6 +187,15 @@
 								<a href="#" class="uppercase font-weight-600 font-size-16 text-color-1 background-color-4 primary-btn">Download Cv</a>
 							</div>
 						</div>
+						<div class="col-md-6 col-lg-5 align-self-center align-self-xl-start d-md-none">
+							<div class="about-img position-relative">
+								<div class="top-left background-color-4"></div>
+								<div class="left-top background-color-4"></div>
+								<div class="bottom-right background-color-4"></div>
+								<div class="right-bottom background-color-4"></div>
+								<img src="assests/images/123.jpg" alt="about-img" class="img-fluid w-100">
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -194,13 +205,49 @@
 			========================================
 			-->
 
-
 			<!-- 
 			========================================
 			Start Skill Section
 			========================================
 			-->
-			
+			<section class="skill py-100 background-color-2">
+				<div class="container">
+					<div class="section-title text-center">
+						<h2 class="position-relative">My Skill</h2>
+						<p class="mx-0">Do you have any projects or need any assistance with project-related please contact me via email, message, or social media. You can also hire me through the freelancing marketplace. </p>
+					 </div>
+					<div class="row mt-60 skill-row">
+						<div class="col-md-6">
+							<div class="single-progressbar">
+		                        <h4 class="title text-color-3">HTML</h4>
+		                        <div class="html"></div>
+		                    </div>
+		                    <div class="single-progressbar">
+		                        <h4 class="title text-color-3">CSS</h4>
+		                        <div class="css"></div>
+		                    </div>
+		                    <div class="single-progressbar">
+		                        <h4 class="title text-color-3">JAVASCRIPT</h4>
+		                        <div class="javascript"></div>
+		                    </div>
+						</div>
+						<div class="col-md-6">
+							<div class="single-progressbar">
+		                        <h4 class="title text-color-3">JQUERY</h4>
+		                        <div class="jquery"></div>
+		                    </div>
+		                    <div class="single-progressbar">
+		                        <h4 class="title text-color-3">BOOTSTRAP</h4>
+		                        <div class="bootstrap"></div>
+		                    </div>
+		                    <div class="single-progressbar">
+		                        <h4 class="title text-color-3">SAAS</h4>
+		                        <div class="sass"></div>
+		                    </div>
+						</div>
+					</div>
+				</div>
+			</section>
 			<!-- 
 			========================================
 			End Skill Section
@@ -215,7 +262,7 @@
 			-->
 			<section class="service pt-90 pb-100 background-color-1">
 				<div class="container">
-					<div class="section-title text-center">
+					<div class="section-title text-center service-title">
 						<h2 class="position-relative">My Services</h2>
 						<p class="mx-0">I provide the following services with quality guaranteed. Client satisfaction is my first priority. If you work with me you will get what you expect.</p>
 					</div>
@@ -257,9 +304,9 @@
 			-->
 			<section class="portfolio background-color-2 pt-90 pb-70">
 				<div class="container">
-					<div class="section-title text-center">
+					<div class="section-title text-center portfolio-title">
 						<h2 class="position-relative">My Portfolio</h2>
-						<p class="mx-0">Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Hic laborum eveniet, iusto facere, neque vel exercitationem illo soluta eius odio consequatur at ducimus voluptatibus, obcaecati velit, ipsa ipsum officiis tempora.</p>
+						<p class="mx-0">Here are some of my latest works. I have worked with several clients both locally and internationally. My latest projects will give you an idea of my work quality.</p>
 					</div>
 					<div class="row mt-60 portfolio-row">
 						<div class="col-lg-4 col-md-6">
@@ -369,9 +416,9 @@
 			-->
 			<section class="testimonial pt-90 pb-85 background-color-1">
 				<div class="container">
-					<div class="section-title text-center">
+					<div class="section-title text-center testimonial-title">
 						<h2 class="position-relative">Happy Clients</h2>
-						<p class="mx-0">Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Hic laborum eveniet, iusto facere, neque vel exercitationem illo soluta eius odio consequatur at ducimus voluptatibus, obcaecati velit, ipsa ipsum officiis tempora.</p>
+						<p class="mx-0">To achieve 100% customer satisfaction, I make sure my services are of the highest quality. Receiving their feedback is always motivating. </p>
 					</div>
 					<!-- Swiper -->
 				    <div class="swiper mt-60">
@@ -438,11 +485,11 @@
 			Start Pricing Section
 			========================================
 			-->
-			<section class="pricing pt-90 pb-70 background-color-2">
+			<section class="pricing pt-90 pb-70 background-color-2 price-title">
 				<div class="container">
 					<div class="section-title text-center">
 						<h2 class="position-relative">Price Plans</h2>
-						<p class="mx-0">Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Hic laborum eveniet, iusto facere, neque vel exercitationem illo soluta eius odio consequatur at ducimus voluptatibus, obcaecati velit, ipsa ipsum officiis tempora.</p>
+						<p class="mx-0">Below is a description of my all-inclusive service packages. The bundles you choose will have quality services inshallah. 100% money-back guaranteed until you are not satisfied.  </p>
 					</div>
 					<div class="row mt-60 price-row">
 						<div class="col-lg-4 col-md-6">
@@ -523,13 +570,13 @@
 			Start Contact Section
 			========================================
 			-->
-			<section class="contact pt-85 pb-100 background-color-1">
+			<section class="contact pt-85 pb-100 background-color-1 contact-title">
 			    <div class="container">
 			    	<div class="section-title text-center">
 						<h2 class="position-relative">Contact Me</h2>
-						<p class="mx-0">Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Hic laborum eveniet, iusto facere, neque vel exercitationem illo soluta eius odio consequatur at ducimus voluptatibus, obcaecati velit, ipsa ipsum officiis tempora.</p>
+						<p class="mx-0">Do you have any projects or need any assistance with project-related please contact me via email, message, or social media. You can also hire me through the freelancing marketplace. </p>
 					 </div>
-					 <div class="row mt-60">
+					 <div class="row mt-60 contact-row">
 						<div class="col-md-7">
 							<div class="form-wrapper background-color-2 py-40 px-35">
 								<form class="form">
@@ -545,7 +592,7 @@
 							<div class="contact-title text-center text-lg-start">
 								<h2 class="font-size-34 font-weight-700 text-color-4">Let's discuss your project</h2>
 								<ul class="contact-adress">
-									<li class="mb-20"><a href="tel:8801843355090"><i class="fas fa-phone font-size-20 text-color-4"></i><span class="ms-15 font-weight-400 font-size-18 text-color-3">+8801843355090</span></a></li>
+									<li class="mb-20"><a href="tel:8801843355090"><i class="fas fa-phone font-size-20 text-color-4 d-block d-lg-inline-block"></i><span class="ms-15 font-weight-400 font-size-18 text-color-3">+8801843355090</span></a></li>
 									<li class="	mb-20"><a href="mailto:mourshad4576@gmail.com"><i class="fas fa-envelope font-size-20 text-color-4"></i><span class="ms-15 font-weight-400 font-size-18 text-color-3">mourshad4576@gmail.com</span></a></li>
 									<li><i class="fas fa-map font-size-20 text-color-4"></i><span class="ms-15 font-weight-400 font-size-18 text-color-3">Chandgaon,Chittagong-4212</span></li>
 								</ul>
@@ -584,18 +631,23 @@
 					</div>
 				</div>
 				<div class="row footer-bottom-row pt-25">
-					<div class="col-lg-6 col-md-7 text-start align-self-center">
-						<div class="copywright">
+					<div class="col-lg-6 col-md-7 text-start d-none d-md-block align-self-center">
+						<div class="copywright text-center text-md-satart">
 							<p class="font-weight-400 font-size-14 text-color-1">Md Mourshad © Copyright 2021. All Right Reserved.</p>
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-4">
-					 	<ul class="footer-icon text-end">
+					 	<ul class="footer-icon text-center text-md-end">
 					 		<li class="d-inline-block me-05"><a href="#" class="font-size-16 text-color-1 background-color-4 d-flex align-items-center justify-content-center"><i class="fab fa-facebook-f"></i></a></li>
 					 		<li class="d-inline-block me-05"><a href="#" class="font-size-16 text-color-1 background-color-4 d-flex align-items-center justify-content-center"><i class="fab fa-instagram"></i></a></li>
 					 		<li class="d-inline-block me-05"><a href="#" class="font-size-16 text-color-1 background-color-4 d-flex align-items-center justify-content-center"><i class="fab fa-github"></i></a></li>
 					 		<li class="d-inline-block me-05"><a href="#" class="font-size-16 text-color-1 background-color-4 d-flex align-items-center justify-content-center"><i class="fab fa-linkedin-in"></i></a></li>
 					 	</ul>
+					</div>
+					<div class="col-lg-6 col-md-7 text-start d-block d-md-none align-self-center">
+						<div class="copywright text-center text-md-satart">
+							<p class="font-weight-400 font-size-14 text-color-1">Md Mourshad © Copyright 2021. All Right Reserved.</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -625,7 +677,10 @@
 		<!-- Js Files -->
 		<script src="assests/js/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.0.0/jquery.waypoints.js" integrity="sha512-kAKC+JNXXE28EycATN2UdxoTwR/5B4GpZnGPkzc7Z0QXGnH+BbFuhYDM7/va6ouR0NfGydfVN2alYnyfU/UCgw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    	<script src="assests/js/jQuery.rProgressbar.min.js"></script>
+    	<script src="assests/js/active.js"></script>
+		<script src="assests/js/jquery.barfiller.js"></script>
 		<script src="assests/js/swiper-bundle.min.js"></script>
 		<script src="assests/js/main.js"></script>
 		<script>
