@@ -34,11 +34,15 @@ $(document).ready(function(){
 
 	});
 
+
+
 	// Type js
 	var typed = new Typed('.element', {
-	  strings: ["a Web Designer.", "a Freelancer."],
-	  typeSpeed: 200,
-	  loop:true
+	  strings: ["Web Designer.", "Freelancer."],
+	  typeSpeed: 80,
+	  loop:true,
+	  backSpeed: 80,
+	  showCursor: false
 	});
 
 	// Skill Bar

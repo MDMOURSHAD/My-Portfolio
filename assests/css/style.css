@@ -300,7 +300,80 @@ Start Reusable Components
 .transition-5s-ease-in-out{
   transition: .5s ease-in-out;
 }
+/* Shutter In Horizontal */
+.hvr-shutter-in-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: var(--third-color);
+  border-radius: 3px;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-shutter-in-horizontal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 3px;
+  background: var(--fourth-color);
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+.hvr-shutter-in-horizontal:hover, .hvr-shutter-in-horizontal:focus, .hvr-shutter-in-horizontal:active {
+  color: white;
+}
+.hvr-shutter-in-horizontal:hover:before, .hvr-shutter-in-horizontal:focus:before, .hvr-shutter-in-horizontal:active:before {
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+}
 
+/* Underline From Center */
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: var(--fourth-color);
+  height: 3px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
 /*
 ========================================
 End Reusable Components
@@ -317,7 +390,7 @@ Start Preloader
     height: 100vh;
     display: flex;
     position: fixed;
-    z-index: 99999;
+    z-index: 999999999999;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -423,7 +496,7 @@ MOBILE MENU
 }
 
 .mobile-menu .nav-list {
-    background: #0077b6;
+    background: var(--first-color);
     position: fixed;
     right: -400px;
     top: 0;
@@ -457,17 +530,17 @@ MOBILE MENU
 }
 
 .nav-list ul li:not(:last-child){
-  margin-bottom:10px;
+  margin-bottom:5px;
 }
 
 .nav-list ul li a {
-    color: #fff;
+    color: var(--third-color);
     text-transform: uppercase;
     font-size: 22px;
     padding: 6px 0px;
     text-decoration: none;
-    display: block;
-    font-weight: 300;
+    display: inline-block;
+    font-weight: 400;
     letter-spacing: 1px;
 }
 
@@ -505,7 +578,7 @@ Start Sticky
   position: fixed;
   top: 0;
   left: 0;
-  transition: .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   width: 100%;
   background: var(--first-color);
   z-index: 9999999;
@@ -595,6 +668,7 @@ Start Skill Section Css
   margin-left: -15px;
   margin-right: -15px;
 }
+
 .skill-row > *{
   padding-left: 15px;
   padding-right: 15px;
@@ -881,6 +955,10 @@ ul.footer-menu li:not(:last-of-type){
 .footer-icon li a{
   height: 37px;
   width: 37px;
+}
+.footer-icon li a:hover i{
+  transform: rotate(360deg);
+  transition:.3s linear;
 }
 .footer-icon li a{
   border-radius: 5px;

@@ -28,6 +28,20 @@ End About us Section Css
 ========================================
 */
 
+/*
+========================================
+Start Skill Section Css
+========================================
+*/
+.skill-title p{
+    width: 65%;
+}
+/*
+========================================
+End Skill Section Css
+========================================
+*/
+
 }
 
 @media (max-width: 991px) {
@@ -38,6 +52,18 @@ Start Reusable Components
 */
 :root{
   --heading: 37px;
+}
+.pt-md-60{
+    padding-top: 60px;
+}
+.pb-md-70{
+    padding-bottom: 70px;
+}
+.pb-md-40{
+    padding-bottom: 40px;
+}
+.pb-md-45{
+    padding-bottom: 45px;
 }
 /*
 ========================================
@@ -103,7 +129,9 @@ End About us Section Css
 Start Skill Section Css
 ========================================
 */
-
+.skill-title p {
+    width: 76%;
+}
 /*
 ========================================
 End Skill Section Css
@@ -272,7 +300,9 @@ Start Skill Section Css
 End Skill Section Css
 ========================================
 */
-
+.skill-title p {
+    width: 84%;
+}
 /*
 ========================================
 Start Services Section Css
@@ -437,7 +467,9 @@ End About us Section Css
 Start Skill Section Css
 ========================================
 */
-
+.skill-title p {
+    width: 100%;
+}
 /*
 ========================================
 End Skill Section Css
