@@ -711,7 +711,7 @@ Start Services Section Css
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 30px 34px;
   border-radius: 8px;
-  background: background .3s ease-in;
+  min-height: 362px;
 }
 .service-box:hover{
   background: var(--fourth-color);
