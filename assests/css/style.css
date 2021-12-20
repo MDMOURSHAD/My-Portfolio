@@ -748,7 +748,10 @@ Start About us Section Css
 */
 
 .about-img {
-  padding: 10px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .about-img img {
