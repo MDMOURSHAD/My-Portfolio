@@ -42,6 +42,21 @@ End Skill Section Css
 ========================================
 */
 
+/*
+========================================
+Start Testimonial Section Css
+========================================
+*/
+.testimonial-desc{
+    padding-left: 35px;
+    padding-right: 35px;
+}
+/*
+========================================
+End Testimonial Section Css
+========================================
+*/
+
 }
 
 @media (max-width: 991px) {
@@ -115,17 +130,6 @@ End Header Section Css
 
 /*
 ========================================
-Start About us Section Css
-========================================
-*/
-/*
-========================================
-End About us Section Css
-========================================
-*/
-
-/*
-========================================
 Start Skill Section Css
 ========================================
 */
@@ -145,6 +149,10 @@ Start Services Section Css
 */
 .service-title p{
     width: 70%;
+}
+.service-box {
+    min-height: auto !important;
+    padding-bottom: 50px;
 }
 /*
 ========================================
@@ -174,19 +182,23 @@ Start Testimonial Section Css
 .testimonial-title p{
     width: 70%;
 }
+.testimonial-desc{
+    min-height: auto;
+}
 /*
 ========================================
 End Testimonial Section Css
 ========================================
 */
-.price-title p {
-    width: 81%;
-}
+
 /*
 ========================================
 Start Price Section Css
 ========================================
 */
+.price-title p {
+    width: 81%;
+}
 /*
 ========================================
 End Price Section Css
@@ -210,17 +222,6 @@ Start Contact Section Css
 /*
 ========================================
 End Contact Section Css
-========================================
-*/
-
-/*
-========================================
-Start Footer Section Css
-========================================
-*/
-/*
-========================================
-End Footer Section Css
 ========================================
 */
 
@@ -294,15 +295,15 @@ End About us Section Css
 Start Skill Section Css
 ========================================
 */
-
+.skill-title p {
+    width: 84%;
+}
 /*
 ========================================
 End Skill Section Css
 ========================================
 */
-.skill-title p {
-    width: 84%;
-}
+
 /*
 ========================================
 Start Services Section Css
@@ -338,6 +339,9 @@ Start Testimonial Section Css
 */
 .testimonial-title p {
     width: 94%;
+}
+.swiper-wrapper{
+    padding-bottom: 65px;
 }
 /*
 ========================================
@@ -401,14 +405,15 @@ Start Reusable Components
 .primary-btn {
     font-size: 15px;
 }
+:root{
+  --heading: 35px;
+}
 /*
 ========================================
 End Reusable Components
 ========================================
 */
-:root{
-  --heading: 35px;
-}
+
 /*
 ========================================
 Start Header Section Css
@@ -483,6 +488,10 @@ Start Services Section Css
 */
 .service-title p {
     width: 100%;
+}
+.service-box {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 /*
 ========================================
@@ -569,7 +578,6 @@ End Footer Section Css
 ========================================
 */
 }
-
 
 
 
